@@ -25,17 +25,27 @@ const PersonLanding: React.FC = () => {
     }, []);
 
     return (
-        <section style={{
-            backgroundImage: isMobile ? 'none' : "url('/images/banner-person.webp')",
-            backgroundColor: isMobile ? 'white' : 'transparent',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-        }}>
-            <Header />
-            <MainBanner />
+        <section
+            style={{
+                backgroundImage: isMobile ? 'none' : "url('/images/banner-person.webp')",
+                backgroundColor: isMobile ? 'white' : 'transparent',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                position: 'relative', // Asegura que el z-index funcione correctamente
+            }}
+        >
+            {/* Dale al header un z-index mayor */}
+            <div style={{ position: 'relative', zIndex: 10 }}>
+                <Header />
+            </div>
+
+            {/* Dale al banner un z-index menor */}
+            <div style={{ position: 'relative', zIndex: 1 }}>
+                <MainBanner />
+            </div>
         </section>
     );
-}
+};
 
 export default PersonLanding;

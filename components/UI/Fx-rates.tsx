@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ButtonPrimary from './ButtonPrimary';
 
 const FxRates: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'buy' | 'sell'>('buy');
@@ -22,7 +23,7 @@ const FxRates: React.FC = () => {
                         className={`price buy m-1 flex-grow flex-shrink basis-full max-w-[50%] h-[45px] flex items-center justify-center cursor-pointer ${activeTab === 'buy' ? 'bg-white rounded-[12.156px]' : 'hover:bg-white hover:rounded-[12.156px]'}`}
                         onClick={() => handleTabChange('buy')}
                     >
-                        <div className="amount font-sans font-semibold text-secondary text-[14px]">
+                        <div className="amount font-sans font-semibold text-secondary text-[12px] sm:text-[14px]">
                             <span>Compra</span>
                             <span> S/</span>3.7790
                         </div>
@@ -32,12 +33,13 @@ const FxRates: React.FC = () => {
                         className={`price sell m-1 flex-grow flex-shrink basis-full max-w-[50%] h-[45px] flex items-center justify-center cursor-pointer ${activeTab === 'sell' ? 'bg-white rounded-[12.156px]' : 'hover:bg-white hover:rounded-[12.156px]'}`}
                         onClick={() => handleTabChange('sell')}
                     >
-                        <div className="amount font-sans font-semibold text-secondary text-[14px]">
+                        <div className="amount font-sans font-semibold text-secondary text-[12px] sm:text-[14px]">
                             <span>Compra</span>
                             <span> S/</span>3.7815
                         </div>
                     </div>
                 </div>
+
 
                 {/* Contenedor para el contenido de las pestañas */}
                 <div className="relative bg-white rounded-b-[12.156px]">
@@ -50,9 +52,9 @@ const FxRates: React.FC = () => {
                                     <div className="flex items-center w-full">
                                         <div className="flex items-center">
                                             <img src="/images/estados-unidos.png" alt="Flag of Peru" className="w-[18px] h-[14px] mr-2" />
-                                            <span className="text-[20px] text-secondary font-sans font-bold">USD</span>
+                                            <span className="text-[16px] sm:text-[20px] text-secondary font-sans font-bold">USD</span>
                                         </div>
-                                        <span className="ml-auto text-[20px] text-secondary font-sans font-bold">$1,000.00</span>
+                                        <span className="ml-auto text-[16px] sm:text-[20px] text-secondary font-sans font-bold">$1,000.00</span>
                                     </div>
                                 </div>
                             </div>
@@ -72,9 +74,9 @@ const FxRates: React.FC = () => {
                                     <div className="flex items-center w-full">
                                         <div className="flex items-center">
                                             <img src="/images/flag-for-flag-peru-svgrepo-com.svg" alt="Flag of Peru" className="w-[24px] h-[16px] mr-2" />
-                                            <span className="text-[20px] text-secondary font-sans font-bold">PEN</span>
+                                            <span className="text-[16px] sm:text-[20px] text-secondary font-sans font-bold">PEN</span>
                                         </div>
-                                        <span className="ml-auto text-[20px] text-secondary font-sans font-bold">S/ 3,772.50</span>
+                                        <span className="ml-auto text-[16px] sm:text-[20px] text-secondary font-sans font-bold">S/ 3,772.50</span>
                                     </div>
                                 </div>
                             </div>
@@ -88,9 +90,9 @@ const FxRates: React.FC = () => {
                                     <div className="flex items-center w-full">
                                         <div className="flex items-center">
                                             <img src="/images/flag-for-flag-peru-svgrepo-com.svg" alt="Flag of Peru" className="w-[24px] h-[16px] mr-2" />
-                                            <span className="text-[20px] text-secondary font-sans font-bold">PEN</span>
+                                            <span className="text-[16px] sm:text-[20px] text-secondary font-sans font-bold">PEN</span>
                                         </div>
-                                        <span className="ml-auto text-[20px] text-secondary font-sans font-bold">S/ 1,000.00</span>
+                                        <span className="ml-auto text-[16px] sm:text-[20px] text-secondary font-sans font-bold">S/ 1,000.00</span>
                                     </div>
                                 </div>
                             </div>
@@ -110,9 +112,9 @@ const FxRates: React.FC = () => {
                                     <div className="flex items-center w-full">
                                         <div className="flex items-center">
                                             <img src="/images/estados-unidos.png" alt="Flag of Peru" className="w-[18px] h-[14px] mr-2" />
-                                            <span className="text-[20px] text-secondary font-sans font-bold">USD</span>
+                                            <span className="text-[16px] sm:text-[20px] text-secondary font-sans font-bold">USD</span>
                                         </div>
-                                        <span className="ml-auto text-[20px] text-secondary font-sans font-bold">$262.85</span>
+                                        <span className="ml-auto text-[16px] sm:text-[20px] text-secondary font-sans font-bold">$262.85</span>
                                     </div>
                                 </div>
                             </div>
@@ -120,14 +122,23 @@ const FxRates: React.FC = () => {
                     )}
                 </div>
             </div>
-            <button className='flex items-center w-full font-extrabold font-sans text-xs mt-4 mb-6 justify-center gap-[5px]'
+            <button className='flex items-center w-full font-sans text-xs mt-4 mb-6 justify-center gap-[5px] font-extrabold '
                 style={{
                     color: '#0094b3',
-                    fontWeight: 700,
                 }}
             >
                 Usar un cupón o código
             </button>
+            <div className='flex flex-row justify-center items-center mb-[3px] pb-[9px] gap-[5px]'>
+                <strong className='font-[600] text-sm text-secondary font-sans text-[12px] sm:text-[14px]'>Ahorro promedio* </strong>
+                <img src="/images/save-money-blue-icon-copy.svg" alt="Flag of Peru" className="w-[24px] h-[19px] mr-[3px]" />
+                <strong className='font-[600] text-sm text-secondary font-sans'>S/ 110.00</strong>
+            </div>
+            <div className='w-full'>
+                <ButtonPrimary label='Ingresa a Rextie' alternate={true} className="w-full h-[56px] text-[15px] font-extrabold" />
+            </div>
+
+
         </div>
     );
 }

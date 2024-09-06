@@ -38,13 +38,16 @@ const MainBanner = () => {
                             </div>
                         </section>
                         <div className="flex flex-col items-center justify-center">
-                            <div className="bg-secondary min-[768px]:bg-secondary min-[1023px]:bg-secondary min-[1365px]:bg-secondary backdrop-blur-md pt-3 p-2 min-[768px]:p-4 rounded-3xl min-w-[344px] min-[768px]:w-[546px] min-[1023px]:w-[556px] min-[1365px]:w-[468px]">
+                            <div className="bg-secondary min-[768px]:bg-secondary/80 min-[1023px]:bg-secondary/70 min-[1365px]:bg-secondary/60 backdrop-blur-md pt-3 p-2 min-[768px]:p-4 rounded-3xl min-w-[344px] min-[768px]:w-[546px] min-[1023px]:w-[556px] min-[1365px]:w-[468px]">
                                 <div className="flex flex-row items-center justify-center mb-3 gap-3">
                                     <img src="/images/trophy-white.png" alt="rextie-logo" />
-                                    <span className="text-[10px] min-[480px]:text-[12px] text-white font-bold">Cambia al instante con todos los bancos en Perú</span>
+                                    <span className="text-[10px] min-[480px]:text-[12px] text-white font-extrabold font-sans">
+                                        Cambia al instante con todos los bancos en Perú
+                                    </span>
                                 </div>
                                 <FxRates />
                             </div>
+
                             <span className=" text-secondary font-sans font-semibold text-[10px] mt-2 mx-3 text-center">(*)Cálculo respecto al tipo de cambio publicado por entidades bancarias.</span>
                         </div>
                     </div>
