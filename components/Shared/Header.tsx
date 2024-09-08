@@ -21,18 +21,19 @@ const Header: React.FC = () => {
                 <ul className='max-w-7xl max-[1919px]:max-w-[75rem] mx-auto px-2.5 py-1.5 flex gap-[30px] list-none ng-star-inserted'>
                     <li
                         onClick={() => setActiveTab('personas')}
-                        className={`font-sans font-bold text-white text-base cursor-pointer ${activeTab === 'personas' ? 'border-b-2 border-orange-500' : ''}`}
+                        className={`font-sans text-white text-base cursor-pointer ${activeTab === 'personas' ? 'font-bold border-b-2 border-orange-500' : 'font-medium'}`}
                     >
                         Personas
                     </li>
                     <li
                         onClick={() => setActiveTab('empresas')}
-                        className={`font-sans font-bold text-white text-base cursor-pointer ${activeTab === 'empresas' ? 'border-b-2 border-orange-500' : ''}`}
+                        className={`font-sans text-white text-base cursor-pointer ${activeTab === 'empresas' ? 'font-bold border-b-2 border-orange-500' : 'font-medium'}`}
                     >
                         Empresas
                     </li>
                 </ul>
             </div>
+
 
             {/* Header para pantallas pequeñas y grandes */}
             <header className='font-size-14 z-[100] h-82 w-full left-0 top-0 md:top-10 ng-star-inserted'>

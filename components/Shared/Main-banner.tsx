@@ -24,7 +24,7 @@ const MainBanner = () => {
                                 <div className="flex flex-row items-center justify-start max-[560px]:justify-center gap-2 min-[480px]:gap-4 max-[560px]:flex-col">
                                     <div className="flex flex-row items-center min-[480px]:gap-4">
                                         <img src="/images/citi-white.svg" alt="rextie-logo" className="hidden min-[480px]:block" />
-                                        <img src="/images/citi.png" alt="rextie-logo" className="block min-[480px]:hidden" />
+                                        <img src="/images/citi-mobile.png" alt="rextie-logo" className="block min-[480px]:hidden" />
                                         <img src="/images/rpp-home.svg" alt="rextie-logo" className="w-8 min-[480px]:w-12" />
                                     </div>
                                     <span className="text-secondary font-sans font-semibold min-[480px]:text-white w-[95px] max-[560px]:w-[100%] max-[560px]:text-center text-[10px] sm:text-[12px] text-[400]">

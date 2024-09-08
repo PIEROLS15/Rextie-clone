@@ -16,13 +16,16 @@ const config: Config = {
           orange: '#ff6e00', // naranja
           text: '#000096',     // azulo oscurito
           muted: '#eff2ff',    // Gris suave
-          success: '#10b981',  // Verde
+          fuente: '#3E4045',  // Verde
           error: '#ef4444',    // Rojo para errores
           info: '#3b82f6',
         }
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+      },
+      touchAction: {
+        'pan-y': 'pan-y',
       },
     },
   },
