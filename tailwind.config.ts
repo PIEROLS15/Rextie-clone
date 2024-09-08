@@ -18,7 +18,7 @@ const config: Config = {
           muted: '#eff2ff',    // Gris suave
           fuente: '#3E4045',  // Verde
           error: '#ef4444',    // Rojo para errores
-          info: '#3b82f6',
+          info: '#707e9b', //color del texto del footer
         }
       },
       fontFamily: {
