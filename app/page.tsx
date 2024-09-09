@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <PersonLanding />
       <AppBanks />
-      {/*<WhyUseRextie />*/}
+      <WhyUseRextie />
       <SectionText />
       {/*<AmountsRextie />*/}
       <SectionMarquee />
