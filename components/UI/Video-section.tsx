@@ -1,43 +1,48 @@
-'use client';
+import { useState } from 'react';
 
-import React, { useState } from 'react';
-
-const VideoSection: React.FC = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
+const VideoSection = () => {
+    const [showVideo, setShowVideo] = useState(false);
 
     const handlePlayClick = () => {
-        setIsPlaying(true);
+        setShowVideo(true);
     };
 
     return (
-        <div className="relative w-full h-48 flex items-center justify-center">
-            <div
-                className={`absolute inset-0 bg-cover bg-center rounded-lg ${isPlaying ? 'hidden' : ''}`}
-                style={{ backgroundImage: "url('/images/rextie-team.jpg')" }} // Asegúrate de usar la ruta correcta
-            ></div>
-            {!isPlaying && (
-                <>
-                    {/* Capa oscura */}
-                    <div className="absolute inset-0 bg-black opacity-50 z-10 rounded-lg"></div>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center z-20 cursor-pointer" onClick={handlePlayClick}>
-                        <img src="/images/play.svg" alt="Play button" className="mb-2 rounded-lg" />
-                        <span className="text-white font-bold">Ver vídeo</span>
-                        <span className="absolute bottom-2 left-2 text-white underline">Rextie en RPP</span>
+        <div className="w-full max-w-[1280px]">
+            <div className="relative block w-full overflow-hidden rounded-[10px] h-[202.5px] sm:h-[292.5px]">
+                {/* Imagen de fondo y capa de opacidad */}
+                {!showVideo && (
+                    <div
+                        className="relative w-full h-full bg-center bg-cover flex items-center justify-center"
+                        style={{ backgroundImage: "url('/images/rextie-team.jpg')" }}
+                    >
+                        <div className="absolute inset-0 bg-black opacity-30 z-[98]"></div>
+                        <div className="relative z-[99] flex flex-col items-center justify-center w-full h-full">
+                            <img
+                                src="/images/play.svg"
+                                alt="play"
+                                className="cursor-pointer"
+                                onClick={handlePlayClick}
+                            />
+                            <span className="font-bold font-sans z-[99] text-white">Ver vídeo</span>
+                            <span className="bottom-[5px] absolute left-[10px] underline font-bold z-[99] text-white">Rextie en RPP TV</span>
+                        </div>
                     </div>
-                </>
-            )}
-            {isPlaying && (
-                <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg"> {/* Ajusta el tamaño y border-radius */}
+                )}
+
+                {/* Video en iframe */}
+                {showVideo && (
                     <iframe
                         src="https://www.youtube.com/embed/j3s5nfNl12Q?autoplay=1"
+                        className="absolute inset-0 w-full h-full z-[97]"
                         frameBorder="0"
-                        className="w-full h-full rounded-lg"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
-                </div>
-            )}
+                )}
+            </div>
         </div>
     );
-};
+}
 
 export default VideoSection;

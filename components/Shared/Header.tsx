@@ -58,7 +58,7 @@ const Header: React.FC = () => {
                             </a>
                         </li>
                         <li className='mx-1h relative inline-block group'>
-                            <button className='flex items-center w-full h-6 mx-3 text-white text-sm font-bold gap-2 border-none cursor-pointer p-0'>
+                            <button className='flex items-center w-full h-6 mx-3 text-white text-sm gap-2 border-none cursor-pointer p-0'>
                                 Servicios
                                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1.25 1.12506L5 4.87506L8.75 1.12506" stroke="#FF6E00" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                             </button>

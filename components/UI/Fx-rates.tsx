@@ -34,7 +34,7 @@ const FxRates: React.FC = () => {
                         onClick={() => handleTabChange('sell')}
                     >
                         <div className="amount font-sans font-semibold text-secondary text-[12px] sm:text-[14px]">
-                            <span>Compra</span>
+                            <span>Venta</span>
                             <span> S/</span>3.7815
                         </div>
                     </div>

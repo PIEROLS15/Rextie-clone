@@ -79,7 +79,7 @@ const WhyUseRextie = () => {
             <div className="flex flex-col md:w-1/2 md:items-center md:content-center gap-[20px]">
                 <div className="px-[20px] md:px-0 md:mr-[25px]">
                     <p className="flex justify-center md:justify-start items-center gap-[10px] text-stratos-accent text-[14.4px] md:text-[16px] font-sans font-bold">
-                        <span style={{ backgroundColor: '#00c8ff', borderRadius: '50%' }} className="block w-[15px] h-[15px] mb-1"></span>
+                        <span style={{ backgroundColor: '#00c8ff', borderRadius: '50%' }} className="block w-[15px] h-[15px] mb-1 font-bold"></span>
                         REXTIE BUSINESS
                     </p>
 
@@ -120,12 +120,12 @@ const WhyUseRextie = () => {
                                         </td>
                                         <td className="p-[10px] text-center">
                                             <div>
-                                                <strong className="text-xs font-sans text-stratos-fuente">S/ 3,7795</strong>
+                                                <strong className="text-[10px] font-sans text-stratos-fuente">S/ 3,7795</strong>
                                             </div>
                                         </td>
                                         <td className="p-[10px] text-center">
                                             <div>
-                                                <strong className="text-xs font-sans text-stratos-fuente">S/ 3,7795</strong>
+                                                <strong className="text-[10px] font-sans text-stratos-fuente">S/ 3,7795</strong>
                                             </div>
                                         </td>
                                     </tr>
@@ -137,18 +137,18 @@ const WhyUseRextie = () => {
                                                     alt="rextie-logo"
                                                     className="block align-middle h-[26px] w-[20px] fill-current text-stratos-fuente max-w-full"
                                                 />
-                                                <span className="text-xs font-sans text-stratos-fuente">Bancos*</span>
+                                                <span className="text-[10px] font-sans text-stratos-fuente">Bancos*</span>
                                             </div>
                                         </td>
 
                                         <td className="p-[10px] text-center">
                                             <div>
-                                                <strong className="text-xs font-sans text-stratos-fuente">S/ 3,7795</strong>
+                                                <strong className="text-[10px] font-sans text-stratos-fuente">S/ 3,7795</strong>
                                             </div>
                                         </td>
                                         <td className="p-[10px] text-center">
                                             <div>
-                                                <strong className="text-xs font-sans text-stratos-fuente">S/ 3,7795</strong>
+                                                <strong className="text-[10px] font-sans text-stratos-fuente">S/ 3,7795</strong>
                                             </div>
                                         </td>
                                     </tr>

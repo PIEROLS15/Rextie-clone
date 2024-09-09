@@ -19,6 +19,7 @@ const config: Config = {
           fuente: '#3E4045',  // Verde
           error: '#ef4444',    // Rojo para errores
           info: '#707e9b', //color del texto del footer
+          link: '#707e9b',
         }
       },
       fontFamily: {

@@ -65,7 +65,7 @@ const WhatDoYouDink = () => {
                     <div className="mx-auto relative overflow-hidden z-[1] block">
                         <div className="flex flex-col text-center justify-start items-center rounded-[6.4px] max-w-[205px]">
                             <article className="w-[198px] h-[312px]">
-                                <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-accent bg-stratos-muted">
+                                <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-link bg-stratos-muted">
                                     <div className="absolute w-full h-full flex flex-col justify-between rounded-[8px]">
                                         <h3 className="text-[16px] my-4"></h3>
                                         <p className="text-[12.8px] my-[16px] mx-[20px] font-sans text-center">
@@ -100,7 +100,7 @@ const WhatDoYouDink = () => {
                 {/* Diseño en desktop */}
                 <div className="hidden md:flex flex-row items-center gap-[20px]">
                     <article className="w-[260px] h-[391px]">
-                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-accent bg-stratos-muted">
+                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-link bg-stratos-muted">
                             <div className="absolute w-full h-full flex flex-col justify-between rounded-[8px]">
                                 <h3 className="text-[16px] my-4"></h3>
                                 <p className="text-[16px] my-[16px] mx-[40px] font-sans text-center">
@@ -114,7 +114,7 @@ const WhatDoYouDink = () => {
                     </article>
 
                     <article className="w-[260px] h-[391px]">
-                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-accent bg-stratos-muted">
+                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-link bg-stratos-muted">
                             <div className="absolute w-full h-full flex flex-col justify-between rounded-[8px]">
                                 <h3 className="text-[16px] my-4"></h3>
                                 <p className="text-[16px] my-[16px] mx-[40px] font-sans text-center">
@@ -128,7 +128,7 @@ const WhatDoYouDink = () => {
                     </article>
 
                     <article className="w-[260px] h-[391px]">
-                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-accent bg-stratos-muted">
+                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-link bg-stratos-muted">
                             <div className="absolute w-full h-full flex flex-col justify-between rounded-[8px]">
                                 <h3 className="text-[16px] my-4"></h3>
                                 <p className="text-[16px] my-[16px] mx-[40px] font-sans text-center">
@@ -142,7 +142,7 @@ const WhatDoYouDink = () => {
                     </article>
 
                     <article className="w-[260px] h-[391px]">
-                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-accent bg-stratos-muted">
+                        <div className="relative w-full h-full items-center rounded-[8px] border-[0.2px] border-stratos-link bg-stratos-muted">
                             <div className="absolute w-full h-full flex flex-col justify-between rounded-[8px]">
                                 <h3 className="text-[16px] my-4"></h3>
                                 <p className="text-[16px] my-[16px] mx-[40px] font-sans text-center">

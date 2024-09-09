@@ -18,10 +18,10 @@ export default function Home() {
       <AppBanks />
       <WhyUseRextie />
       <SectionText />
-      {/*<AmountsRextie />*/}
+      <AmountsRextie />
       <SectionMarquee />
       <WhatDoYouDink />
-      {/*<PressRextie />*/}
+      <PressRextie />
       <DowloandApp />
       <ScrollTop />
       <Footer />

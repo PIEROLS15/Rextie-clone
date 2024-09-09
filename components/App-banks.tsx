@@ -52,7 +52,7 @@ const AppBanks = () => {
                             </div>
                         </div>
                         <button className="p-0">
-                            <span style={{ color: '#0031F7' }} className="text-xs font-sans font-bold underline">Ver bancos disponibles</span>
+                            <span style={{ color: '#0031F7' }} className="text-xs font-sans underline">Ver bancos disponibles</span>
                         </button>
                     </div>
                 </div>
